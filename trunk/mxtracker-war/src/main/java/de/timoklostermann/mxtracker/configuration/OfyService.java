@@ -4,12 +4,10 @@ import com.googlecode.objectify.Objectify;
 import com.googlecode.objectify.ObjectifyFactory;
 import com.googlecode.objectify.ObjectifyService;
 
-import de.timoklostermann.mxtracker.entity.Message;
 import de.timoklostermann.mxtracker.entity.Status;
 
 public class OfyService {
 	static {
-		factory().register(Message.class);
 		factory().register(Status.class);
     }
 
